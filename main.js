@@ -1,4 +1,4 @@
- // Enhanced theme toggle with smooth transitions
+// Enhanced theme toggle with smooth transitions
         function toggleTheme() {
             const body = document.body;
             const toggle = document.querySelector('.theme-toggle');
@@ -231,3 +231,23 @@
                 num.style.transform = `translateY(${rate}px)`;
             });
         });
+
+        // Scroll to top functionality
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+// Show button when scrolling down
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollToTopButton.classList.add('visible');
+    } else {
+        scrollToTopButton.classList.remove('visible');
+    }
+});
+
+// Smooth scroll to top when clicked
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

@@ -1,4 +1,4 @@
-     :root {
+:root {
          --primary: #000000;
          --secondary: #ffffff;
          --accent: #333333;
@@ -615,6 +615,49 @@
 
      .neural-bg .node:nth-child(odd) {
          animation: pulse 4s infinite ease-in-out, glow 6s infinite ease-in-out;
+     }
+
+     /* Scroll to Top Button */
+     #scroll-to-top {
+         position: fixed;
+         bottom: 30px;
+         right: 30px;
+         width: 45px;
+         height: 45px;
+         border-radius: 50%;
+         background: var(--surface);
+         color: var(--secondary);
+         border: 1px solid var(--border);
+         cursor: pointer;
+         opacity: 0;
+         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+         transform: translateY(100px);
+         font-size: 18px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 1000;
+     }
+
+     #scroll-to-top.visible {
+         opacity: 1;
+         transform: translateY(0);
+     }
+
+     #scroll-to-top:hover {
+         border-color: var(--secondary);
+         transform: translateY(-3px) scale(1.05);
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     }
+
+     #scroll-to-top::before {
+         content: '↑';
+         position: relative;
+         transition: transform 0.3s ease;
+     }
+
+     #scroll-to-top:hover::before {
+         transform: translateY(-2px);
      }
 
      /* Responsive */
