@@ -14,6 +14,21 @@
     --muted: #999999;
     --surface: #f8f8f8;
     --border: #e0e0e0;
+
+    .subtitle,
+    .phase-desc {
+        color: #555555;
+    }
+
+    .phase-items li,
+    .principles-header,
+    .principle-label {
+        color: #333333;
+    }
+
+    .phase:hover .phase-desc {
+        color: #000000;
+    }
 }
 
 * {
