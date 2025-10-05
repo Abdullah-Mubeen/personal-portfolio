@@ -921,27 +921,6 @@ html {
     font-weight: 300;
 }
 
-.theme-toggle {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--border);
-    background: var(--primary);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.theme-toggle:hover {
-    border-color: var(--secondary);
-}
-
 @media (max-width: 1024px) {
     .phase {
         grid-template-columns: 50px 120px 1fr;
