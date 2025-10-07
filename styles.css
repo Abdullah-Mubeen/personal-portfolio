@@ -326,8 +326,7 @@ body {
 }
 
 .stat-item:hover {
-    border-color: var(--secondary);
-    transform: translateY(-5px);
+    border-color: var(--secondary); 
 }
 
 .stat-number {
@@ -924,6 +923,7 @@ html {
 
 .principle-label {
     font-size: 0.65rem;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: #e3e2e2;

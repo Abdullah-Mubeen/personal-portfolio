@@ -89,17 +89,6 @@ function createNeuralNetwork() {
 
 // Initialize additional enhancements
 function initializeEnhancements() {
-    // Add floating effect to stats
-    document.querySelectorAll('.stat-item').forEach((stat, index) => {
-        stat.style.animationDelay = (index * 0.2) + 's';
-        stat.addEventListener('mouseenter', () => {
-            stat.style.transform = 'translateY(-10px) scale(1.05)';
-        });
-        stat.addEventListener('mouseleave', () => {
-            stat.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-
     // Enhanced skill cell interactions
     document.querySelectorAll('.skill-cell').forEach(cell => {
         cell.addEventListener('mouseenter', () => {
