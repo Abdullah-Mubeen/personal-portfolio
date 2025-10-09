@@ -320,7 +320,7 @@ body {
 
 .stat-item {
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
     border: 1px solid var(--border);
     transition: all 0.3s ease;
 }
